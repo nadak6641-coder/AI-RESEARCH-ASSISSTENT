@@ -1,0 +1,130 @@
+[
+  {
+    "filename": "01_Visual_Instruction_Tuning.pdf",
+    "title": "Visual Instruction Tuning",
+    "authors": [
+      "Haotian Liu",
+      "Chunyuan Li",
+      "Qingyang Wu",
+      "Yong Jae Lee"
+    ],
+    "published": "2023-04-17",
+    "arxiv_id": "2304.08485",
+    "url": "http://arxiv.org/abs/2304.08485v2",
+    "citations": 10454,
+    "abstract": "Instruction tuning large language models (LLMs) using machine-generated instruction-following data has improved zero-shot capabilities on new tasks, but the idea is less explored in the multimodal field. In this paper, we present the first attempt to use language-only GPT-4 to generate multimodal language-image instruction-following data. By instruction tuning on such generated data, we introduce LLaVA: Large Language and Vision Assistant, an end-to-end trained large multimodal model that connects a vision encoder and LLM for general-purpose visual and language understanding.Our early experiments show that LLaVA demonstrates impressive multimodel chat abilities, sometimes exhibiting the behaviors of multimodal GPT-4 on unseen images/instructions, and yields a 85.1% relative score compared with GPT-4 on a synthetic multimodal instruction-following dataset. When fine-tuned on Science QA, the synergy of LLaVA and GPT-4 achieves a new state-of-the-art accuracy of 92.53%. We make GPT-4 generated visual instruction tuning data, our model and code base publicly available."
+  },
+  {
+    "filename": "02_InstructBLIP_Towards_General-purpose_Vision-Language_Models_with_Instr.pdf",
+    "title": "InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning",
+    "authors": [
+      "Wenliang Dai",
+      "Junnan Li",
+      "Dongxu Li",
+      "Anthony Meng Huat Tiong",
+      "Junqi Zhao",
+      "Weisheng Wang"
+    ],
+    "published": "2023-05-11",
+    "arxiv_id": "2305.06500",
+    "url": "http://arxiv.org/abs/2305.06500v2",
+    "citations": 3726,
+    "abstract": "Large-scale pre-training and instruction tuning have been successful at creating general-purpose language models with broad competence. However, building general-purpose vision-language models is challenging due to the rich input distributions and task diversity resulting from the additional visual input. Although vision-language pretraining has been widely studied, vision-language instruction tuning remains under-explored. In this paper, we conduct a systematic and comprehensive study on vision-language instruction tuning based on the pretrained BLIP-2 models. We gather 26 publicly available datasets, covering a wide variety of tasks and capabilities, and transform them into instruction tuning format. Additionally, we introduce an instruction-aware Query Transformer, which extracts informative features tailored to the given instruction. Trained on 13 held-in datasets, InstructBLIP attains state-of-the-art zero-shot performance across all 13 held-out datasets, substantially outperforming BLIP-2 and larger Flamingo models. Our models also lead to state-of-the-art performance when finetuned on individual downstream tasks (e.g., 90.7% accuracy on ScienceQA questions with image contexts). Furthermore, we qualitatively demonstrate the advantages of InstructBLIP over concurrent multimodal models. All InstructBLIP models are open-sourced at https://github.com/salesforce/LAVIS/tree/main/projects/instructblip."
+  },
+  {
+    "filename": "03_Osprey_Pixel_Understanding_with_Visual_Instruction_Tuning.pdf",
+    "title": "Osprey: Pixel Understanding with Visual Instruction Tuning",
+    "authors": [
+      "Yuqian Yuan",
+      "Wentong Li",
+      "Jian Liu",
+      "Dongqi Tang",
+      "Xinjie Luo",
+      "Chi Qin"
+    ],
+    "published": "2023-12-15",
+    "arxiv_id": "2312.10032",
+    "url": "http://arxiv.org/abs/2312.10032v4",
+    "citations": 194,
+    "abstract": "Multimodal large language models (MLLMs) have recently achieved impressive general-purpose vision-language capabilities through visual instruction tuning. However, current MLLMs primarily focus on image-level or box-level understanding, falling short in achieving fine-grained vision-language alignment at pixel level. Besides, the lack of mask-based instruction data limits their advancements. In this paper, we propose Osprey, a mask-text instruction tuning approach, to extend MLLMs by incorporating fine-grained mask regions into language instruction, aiming at achieving pixel-wise visual understanding. To achieve this goal, we first meticulously curate a mask-based region-text dataset with 724K samples, and then design a vision-language model by injecting pixel-level representation into LLM. Specifically, Osprey adopts a convolutional CLIP backbone as the vision encoder and employs a mask-aware visual extractor to extract precise visual mask features from high resolution input. Experimental results demonstrate Osprey's superiority in various region understanding tasks, showcasing its new capability for pixel-level instruction tuning. In particular, Osprey can be integrated with Segment Anything Model (SAM) seamlessly to obtain multi-granularity semantics. The source code, dataset and demo can be found at https://github.com/CircleRadon/Osprey."
+  },
+  {
+    "filename": "04_SVIT_Scaling_up_Visual_Instruction_Tuning.pdf",
+    "title": "SVIT: Scaling up Visual Instruction Tuning",
+    "authors": [
+      "Bo Zhao",
+      "Boya Wu",
+      "Muyang He",
+      "Tiejun Huang"
+    ],
+    "published": "2023-07-09",
+    "arxiv_id": "2307.04087",
+    "url": "http://arxiv.org/abs/2307.04087v3",
+    "citations": 176,
+    "abstract": "Thanks to the emerging of foundation models, the large language and vision models are integrated to acquire the multimodal ability of visual captioning, question answering, etc. Although existing multimodal models present impressive performance of visual understanding and reasoning, their limits are still largely under-explored due to the scarcity of high-quality instruction tuning data. To push the limits of multimodal capability, we Scale up Visual Instruction Tuning (SVIT) by constructing a dataset of 4.2 million visual instruction tuning data including 1.6M conversation question-answer (QA) pairs, 1.6M complex reasoning QA pairs, 1.0M referring QA pairs and 106K detailed image descriptions. Besides the volume, the proposed dataset is also featured by the high quality and rich diversity, which is generated by prompting GPT-4 with the abundant manual annotations of images. We also propose a new data recipe to select subset with better diversity and balance, which evokes model's superior capabilities. Extensive experiments verify that SVIT-v1.5, trained on the proposed dataset, outperforms state-of-the-art Multimodal Large Language Models on popular benchmarks. The data and code are publicly available at https://github.com/BAAI-DCAI/Visual-Instruction-Tuning."
+  },
+  {
+    "filename": "05_M3IT_A_Large-Scale_Dataset_towards_Multi-Modal_Multilingual_Instructio.pdf",
+    "title": "M$^3$IT: A Large-Scale Dataset towards Multi-Modal Multilingual Instruction Tuning",
+    "authors": [
+      "Lei Li",
+      "Yuwei Yin",
+      "Shicheng Li",
+      "Liang Chen",
+      "Peiyi Wang",
+      "Shuhuai Ren"
+    ],
+    "published": "2023-06-07",
+    "arxiv_id": "2306.04387",
+    "url": "http://arxiv.org/abs/2306.04387v2",
+    "citations": 144,
+    "abstract": "Instruction tuning has significantly advanced large language models (LLMs) such as ChatGPT, enabling them to align with human instructions across diverse tasks. However, progress in open vision-language models (VLMs) has been limited due to the scarcity of high-quality instruction datasets. To tackle this challenge and promote research in the vision-language field, we introduce the Multi-Modal, Multilingual Instruction Tuning (M$^3$IT) dataset, designed to optimize VLM alignment with human instructions. Our M$^3$IT dataset comprises 40 carefully curated datasets, including 2.4 million instances and 400 manually written task instructions, reformatted into a vision-to-text structure. Key tasks are translated into 80 languages with an advanced translation system, ensuring broader accessibility. M$^3$IT surpasses previous datasets regarding task coverage, instruction number and instance scale. Moreover, we develop Ying-VLM, a VLM model trained on our M$^3$IT dataset, showcasing its potential to answer complex questions requiring world knowledge, generalize to unseen video tasks, and comprehend unseen instructions in Chinese. We have open-sourced the dataset to encourage further research."
+  },
+  {
+    "filename": "06_ANOLE_An_Open_Autoregressive_Native_Large_Multimodal_Models_for_Interl.pdf",
+    "title": "ANOLE: An Open, Autoregressive, Native Large Multimodal Models for Interleaved Image-Text Generation",
+    "authors": [
+      "Ethan Chern",
+      "Jiadi Su",
+      "Yan Ma",
+      "Pengfei Liu"
+    ],
+    "published": "2024-07-08",
+    "arxiv_id": "2407.06135",
+    "url": "http://arxiv.org/abs/2407.06135v1",
+    "citations": 110,
+    "abstract": "Previous open-source large multimodal models (LMMs) have faced several limitations: (1) they often lack native integration, requiring adapters to align visual representations with pre-trained large language models (LLMs); (2) many are restricted to single-modal generation; (3) while some support multimodal generation, they rely on separate diffusion models for visual modeling and generation. To mitigate these limitations, we present Anole, an open, autoregressive, native large multimodal model for interleaved image-text generation. We build Anole from Meta AI's Chameleon, adopting an innovative fine-tuning strategy that is both data-efficient and parameter-efficient. Anole demonstrates high-quality, coherent multimodal generation capabilities. We have open-sourced our model, training framework, and instruction tuning data."
+  },
+  {
+    "filename": "07_VIGC_Visual_Instruction_Generation_and_Correction.pdf",
+    "title": "VIGC: Visual Instruction Generation and Correction",
+    "authors": [
+      "Bin Wang",
+      "Fan Wu",
+      "Xiao Han",
+      "Jiahui Peng",
+      "Huaping Zhong",
+      "Pan Zhang"
+    ],
+    "published": "2023-08-24",
+    "arxiv_id": "2308.12714",
+    "url": "http://arxiv.org/abs/2308.12714v3",
+    "citations": 97,
+    "abstract": "The integration of visual encoders and large language models (LLMs) has driven recent progress in multimodal large language models (MLLMs). However, the scarcity of high-quality instruction-tuning data for vision-language tasks remains a challenge. The current leading paradigm, such as LLaVA, relies on language-only GPT-4 to generate data, which requires pre-annotated image captions and detection bounding boxes, suffering from understanding image details. A practical solution to this problem would be to utilize the available multimodal large language models (MLLMs) to generate instruction data for vision-language tasks. However, it's worth noting that the currently accessible MLLMs are not as powerful as their LLM counterparts, as they tend to produce inadequate responses and generate false information. As a solution for addressing the current issue, this paper proposes the Visual Instruction Generation and Correction (VIGC) framework that enables multimodal large language models to generate instruction-tuning data and progressively enhance its quality on-the-fly. Specifically, Visual Instruction Generation (VIG) guides the vision-language model to generate diverse instruction-tuning data. To ensure generation quality, Visual Instruction Correction (VIC) adopts an iterative update mechanism to correct any inaccuracies in data produced by VIG, effectively reducing the risk of hallucination. Leveraging the diverse, high-quality data generated by VIGC, we finetune mainstream models and validate data quality based on various evaluations. Experimental results demonstrate that VIGC not only compensates for the shortcomings of language-only data generation methods, but also effectively enhances the benchmark performance. The models, datasets, and code are available at https://opendatalab.github.io/VIGC."
+  },
+  {
+    "filename": "08_CIEM_Contrastive_Instruction_Evaluation_Method_for_Better_Instruction.pdf",
+    "title": "CIEM: Contrastive Instruction Evaluation Method for Better Instruction Tuning",
+    "authors": [
+      "Hongyu Hu",
+      "Jiyuan Zhang",
+      "Minyi Zhao",
+      "Zhenbang Sun"
+    ],
+    "published": "2023-09-05",
+    "arxiv_id": "2309.02301",
+    "url": "http://arxiv.org/abs/2309.02301v2",
+    "citations": 90,
+    "abstract": "Nowadays, the research on Large Vision-Language Models (LVLMs) has been significantly promoted thanks to the success of Large Language Models (LLM). Nevertheless, these Vision-Language Models (VLMs) are suffering from the drawback of hallucination -- due to insufficient understanding of vision and language modalities, VLMs may generate incorrect perception information when doing downstream applications, for example, captioning a non-existent entity. To address the hallucination phenomenon, on the one hand, we introduce a Contrastive Instruction Evaluation Method (CIEM), which is an automatic pipeline that leverages an annotated image-text dataset coupled with an LLM to generate factual/contrastive question-answer pairs for the evaluation of the hallucination of VLMs. On the other hand, based on CIEM, we further propose a new instruction tuning method called CIT (the abbreviation of Contrastive Instruction Tuning) to alleviate the hallucination of VLMs by automatically producing high-quality factual/contrastive question-answer pairs and corresponding justifications for model tuning. Through extensive experiments on CIEM and CIT, we pinpoint the hallucination issues commonly present in existing VLMs, the disability of the current instruction-tuning dataset to handle the hallucination phenomenon and the superiority of CIT-tuned VLMs over both CIEM and public datasets."
+  }
+]

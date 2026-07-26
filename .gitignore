@@ -1,0 +1,24 @@
+# ===== Secrets, most important =====
+.env
+.streamlit/secrets.toml
+*.key
+
+# ===== Large files that do not need to be committed =====
+data/raw_pdfs/
+data/embeddings.npy
+
+# Note: data/chroma_store/ is deliberately NOT ignored.
+# It must be committed so the deployed Streamlit app finds a ready index
+# instead of trying to rebuild it.
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+
+# ===== OS and editors =====
+.DS_Store
+.vscode/
+.idea/

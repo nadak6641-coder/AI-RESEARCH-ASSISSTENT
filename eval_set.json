@@ -1,0 +1,24 @@
+[
+  {
+    "question": "What problem does retrieval augmented generation solve?",
+    "expected_keywords": ["retrieval", "knowledge"],
+    "note": "Replace these with keywords from the papers you actually indexed"
+  },
+  {
+    "question": "How is the model evaluated?",
+    "expected_keywords": ["benchmark", "evaluation"]
+  },
+  {
+    "question": "What limitations do the authors mention?",
+    "expected_keywords": ["limitation"]
+  },
+  {
+    "question": "ما هي النتائج الرئيسية للبحث؟",
+    "expected_keywords": ["results", "performance"],
+    "note": "Arabic question against English papers - tests the multilingual model"
+  },
+  {
+    "question": "What dataset was used for training?",
+    "expected_keywords": ["dataset", "training"]
+  }
+]

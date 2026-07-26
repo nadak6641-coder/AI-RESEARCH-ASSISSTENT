@@ -1,0 +1,11 @@
+# chromadb is pinned on purpose.
+# A store built with one version may not be readable by another, so the same
+# version must be installed locally and on Streamlit Cloud.
+chromadb==1.5.9
+
+streamlit>=1.36
+sentence-transformers>=3.0.0
+PyMuPDF>=1.24.0
+arxiv>=2.1.0
+requests>=2.31.0
+numpy>=1.26.0
